@@ -49,4 +49,11 @@ public class ReviewTest {
 		String check = underTest.getCategory();
 		assertEquals("category", check);
 	}
+
+	@Test
+	public void shouldReturnContent() {
+		String check = underTest.getContent();
+		assertEquals("content", check);
+	}
+
 }

@@ -30,4 +30,8 @@ public class Review {
 		return category;
 	}
 
+	public String getContent() {
+		return null;
+	}
+
 }
