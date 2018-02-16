@@ -28,7 +28,7 @@ public class ReviewTest {
 
 	@Test
 	public void shouldReturnId() {
-		long check = underTest.getCourseID();
+		long check = underTest.getId();
 		assertEquals(1111L, check);
 	}
 

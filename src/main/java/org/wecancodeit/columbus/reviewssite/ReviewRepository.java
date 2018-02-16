@@ -17,10 +17,10 @@ public class ReviewRepository {
 		Review manga = new Review(3L, "Manga", "image", "Manga Content", "Manga Category", "Manga Description");
 		Review anime2 = new Review(4L, "Anime2", "image", "Anime2 Content", "Anime2 Category", "Anime2 Description");
 
-		reviews.put(anime.getCourseID(), anime);
-		reviews.put(game.getCourseID(), game);
-		reviews.put(manga.getCourseID(), manga);
-		reviews.put(anime2.getCourseID(), anime2);
+		reviews.put(anime.getId(), anime);
+		reviews.put(game.getId(), game);
+		reviews.put(manga.getId(), manga);
+		reviews.put(anime2.getId(), anime2);
 	}
 
 	public ReviewRepository(Review... reviews) {
@@ -29,7 +29,7 @@ public class ReviewRepository {
 
 	private void populateReviewsMap(Review... reviews) {
 		for (Review review : reviews) {
-			this.reviews.put(review.getCourseID(), review);
+			this.reviews.put(review.getId(), review);
 		}
 	}
 
