@@ -2,11 +2,14 @@ package org.wecancodeit.columbus.reviewssite;
 
 public class Review {
 
-	public Review(long l, String tITLE, String uRL, String cATEGORY, String cONTENT, String dESCRIPTION) {
+	private long iD;
+
+	public Review(long iD, String tITLE, String uRL, String cATEGORY, String cONTENT, String dESCRIPTION) {
+		this.iD = iD;
 	}
 
 	public long getId() {
-		return 0;
+		return iD;
 	}
 
 }

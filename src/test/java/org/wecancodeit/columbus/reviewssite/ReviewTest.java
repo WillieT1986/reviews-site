@@ -25,7 +25,7 @@ public class ReviewTest {
 	public void shouldReturnId() {
 		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
 		long check = underTest.getId();
-		assertEquals(10L, check);
+		assertEquals(1111L, check);
 	}
 
 }
