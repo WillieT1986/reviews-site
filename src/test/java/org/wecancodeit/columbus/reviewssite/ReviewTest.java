@@ -1,5 +1,7 @@
 package org.wecancodeit.columbus.reviewssite;
 
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
 
 public class ReviewTest {
@@ -14,7 +16,8 @@ public class ReviewTest {
 
 	@Test
 	public void shouldConstructIdTitleImageurlCategoryContentDescription() {
-		underTest = new Review(0L, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+		assertNotNull(underTest);
 	}
 
 }
