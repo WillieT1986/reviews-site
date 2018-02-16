@@ -16,7 +16,7 @@ public class ReviewRepository {
 	}
 
 	public ReviewRepository(Review... reviews) {
-		populateReviewsMap();
+		populateReviewsMap(reviews);
 	}
 
 	private void populateReviewsMap(Review... reviews) {
