@@ -2,15 +2,15 @@ package org.wecancodeit.columbus.reviewssite;
 
 public class Review {
 
-	private long iD;
+	private long courseID;
 	private String title;
 	private String imageURL;
 	private String category;
 	private String content;
 	private String description;
 
-	public Review(long iD, String title, String imageURL, String category, String content, String description) {
-		this.iD = iD;
+	public Review(long courseID, String title, String imageURL, String category, String content, String description) {
+		this.courseID = courseID;
 		this.title = title;
 		this.imageURL = imageURL;
 		this.category = category;
@@ -18,8 +18,8 @@ public class Review {
 		this.description = description;
 	}
 
-	public long getId() {
-		return iD;
+	public long getCourseID() {
+		return courseID;
 	}
 
 	public String getTitle() {
