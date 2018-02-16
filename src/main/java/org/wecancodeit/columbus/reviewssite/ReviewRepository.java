@@ -33,8 +33,8 @@ public class ReviewRepository {
 		}
 	}
 
-	public Review findOne(long courseID) {
-		return reviews.get(courseID);
+	public Review findOne(long reviewID) {
+		return reviews.get(reviewID);
 	}
 
 	public Collection<Review> findAll() {

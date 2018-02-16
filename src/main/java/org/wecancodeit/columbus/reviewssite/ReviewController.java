@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ReviewController {
 
 	@Resource
-	ReviewRepository reviewRepo; // might need = new ReviewRepository();
+	ReviewRepository reviewRepo = new ReviewRepository();
 
 	@RequestMapping(value = "reviews")
 	public String getAllReviews(Model model) {
