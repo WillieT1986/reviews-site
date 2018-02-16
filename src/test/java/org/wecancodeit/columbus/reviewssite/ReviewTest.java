@@ -41,6 +41,7 @@ public class ReviewTest {
 	@Test
 	public void shouldReturnImageURL() {
 		String check = underTest.getImageURL();
+		assertEquals("imageURL", check);
 	}
 
 }
