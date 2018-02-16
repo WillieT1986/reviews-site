@@ -3,6 +3,7 @@ package org.wecancodeit.columbus.reviewssite;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class ReviewTest {
@@ -10,29 +11,39 @@ public class ReviewTest {
 
 	private long ID = 1111;
 	private String TITLE = "title";
-	private String URL = "url";
+	private String IMAGEURL = "ImageURL";
 	private String CATEGORY = "category";
 	private String CONTENT = "content";
 	private String DESCRIPTION = "description";
 
+	@Before
+	public void setup() {
+		underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
+	}
+
 	@Test
-	public void shouldConstructIdTitleImageurlCategoryContentDescription() {
-		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+	public void shouldConstructIdTitleImageURLCategoryContentDescription() {
+		// underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void shouldReturnId() {
-		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+		// underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
 		long check = underTest.getId();
 		assertEquals(1111L, check);
 	}
 
 	@Test
 	public void shouldReturnTitle() {
-		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+		// underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
 		String check = underTest.getTitle();
 		assertEquals("title", check);
+	}
+
+	@Test
+	public void shouldReturnImageURL() {
+
 	}
 
 }
