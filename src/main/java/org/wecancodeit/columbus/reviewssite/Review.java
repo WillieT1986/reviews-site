@@ -24,4 +24,8 @@ public class Review {
 		return imageURL;
 	}
 
+	public String getCategory() {
+		return null;
+	}
+
 }

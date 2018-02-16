@@ -44,4 +44,9 @@ public class ReviewTest {
 		assertEquals("imageURL", check);
 	}
 
+	@Test
+	public void shouldReturnCategory() {
+		String check = underTest.getCategory();
+		assertEquals("category", check);
+	}
 }
