@@ -7,13 +7,15 @@ public class Review {
 	private String imageURL;
 	private String category;
 	private String content;
+	private String description;
 
-	public Review(long iD, String title, String imageURL, String category, String content, String dESCRIPTION) {
+	public Review(long iD, String title, String imageURL, String category, String content, String description) {
 		this.iD = iD;
 		this.title = title;
 		this.imageURL = imageURL;
 		this.category = category;
 		this.content = content;
+		this.description = description;
 	}
 
 	public long getId() {
@@ -37,7 +39,7 @@ public class Review {
 	}
 
 	public String getDescription() {
-		return null;
+		return description;
 	}
 
 }
