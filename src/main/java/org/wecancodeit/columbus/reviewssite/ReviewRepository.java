@@ -31,7 +31,7 @@ public class ReviewRepository {
 	}
 
 	public Collection<Review> findAll() {
-		return null;
+		return reviews.values();
 	}
 
 }
