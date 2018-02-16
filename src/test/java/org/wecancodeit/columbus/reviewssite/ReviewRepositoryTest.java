@@ -20,10 +20,15 @@ public class ReviewRepositoryTest {
 	@Test
 	public void shouldFindFirstReview() {
 		underTest = new ReviewRepository(firstReview);
-
 		Review result = underTest.findOne(firstReviewID);
-
 		assertThat(result, is(firstReview));
+	}
+
+	@Test
+	public void shouldFindSecondReview() {
+		underTest = new ReviewRepository(firstReview, secondReview);
+		Review result = underTest.findOne(secondReviewID);
+		assertThat(result, is(secondReview));
 
 	}
 
