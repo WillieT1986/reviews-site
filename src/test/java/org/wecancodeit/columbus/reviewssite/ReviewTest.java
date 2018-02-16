@@ -11,7 +11,7 @@ public class ReviewTest {
 
 	private long ID = 1111;
 	private String TITLE = "title";
-	private String IMAGEURL = "ImageURL";
+	private String IMAGEURL = "imageURL";
 	private String CATEGORY = "category";
 	private String CONTENT = "content";
 	private String DESCRIPTION = "description";
