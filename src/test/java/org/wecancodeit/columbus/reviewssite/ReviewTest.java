@@ -1,5 +1,6 @@
 package org.wecancodeit.columbus.reviewssite;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
@@ -18,6 +19,13 @@ public class ReviewTest {
 	public void shouldConstructIdTitleImageurlCategoryContentDescription() {
 		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
 		assertNotNull(underTest);
+	}
+
+	@Test
+	public void shouldReturnId() {
+		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+		long check = underTest.getId();
+		assertEquals(10L, check);
 	}
 
 }
