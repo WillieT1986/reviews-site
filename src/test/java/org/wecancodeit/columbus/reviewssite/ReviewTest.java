@@ -57,7 +57,7 @@ public class ReviewTest {
 	}
 
 	@Test
-	public void shouldReturnDescrition() {
+	public void shouldReturnDescription() {
 		String check = underTest.getDescription();
 		assertEquals("description", check);
 	}
