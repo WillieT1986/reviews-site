@@ -36,4 +36,8 @@ public class Review {
 		return content;
 	}
 
+	public String getDescription() {
+		return null;
+	}
+
 }
