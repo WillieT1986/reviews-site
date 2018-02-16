@@ -28,4 +28,11 @@ public class ReviewTest {
 		assertEquals(1111L, check);
 	}
 
+	@Test
+	public void shouldReturnTitle() {
+		underTest = new Review(ID, TITLE, URL, CATEGORY, CONTENT, DESCRIPTION);
+		String check = underTest.getTitle();
+		assertEquals("title", check);
+	}
+
 }
