@@ -1,5 +1,6 @@
 package org.wecancodeit.columbus.reviewssite;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,6 +28,10 @@ public class ReviewRepository {
 
 	public Review findOne(long courseID) {
 		return reviews.get(courseID);
+	}
+
+	public Collection<Review> findAll() {
+		return null;
 	}
 
 }

@@ -1,7 +1,10 @@
 package org.wecancodeit.columbus.reviewssite;
 
+import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
+
+import java.util.Collection;
 
 import org.junit.Test;
 
@@ -29,7 +32,13 @@ public class ReviewRepositoryTest {
 		underTest = new ReviewRepository(firstReview, secondReview);
 		Review result = underTest.findOne(secondReviewID);
 		assertThat(result, is(secondReview));
+	}
 
+	@Test
+	public void shouldFindAll() {
+		underTest = new ReviewRepository(firstReview, secondReview);
+		Collection<Review> result = underTest.findAll();
+		assertThat(result, containsInAnyOrder(firstReview, secondReview));
 	}
 
 }
