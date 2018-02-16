@@ -5,7 +5,7 @@ public class Review {
 	private long iD;
 	private String title;
 
-	public Review(long iD, String title, String uRL, String cATEGORY, String cONTENT, String dESCRIPTION) {
+	public Review(long iD, String title, String imageURL, String cATEGORY, String cONTENT, String dESCRIPTION) {
 		this.iD = iD;
 		this.title = title;
 	}
@@ -16,6 +16,10 @@ public class Review {
 
 	public String getTitle() {
 		return title;
+	}
+
+	public String getImageURL() {
+		return null;
 	}
 
 }

@@ -23,27 +23,24 @@ public class ReviewTest {
 
 	@Test
 	public void shouldConstructIdTitleImageURLCategoryContentDescription() {
-		// underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void shouldReturnId() {
-		// underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
 		long check = underTest.getId();
 		assertEquals(1111L, check);
 	}
 
 	@Test
 	public void shouldReturnTitle() {
-		// underTest = new Review(ID, TITLE, IMAGEURL, CATEGORY, CONTENT, DESCRIPTION);
 		String check = underTest.getTitle();
 		assertEquals("title", check);
 	}
 
 	@Test
 	public void shouldReturnImageURL() {
-
+		String check = underTest.getImageURL();
 	}
 
 }
