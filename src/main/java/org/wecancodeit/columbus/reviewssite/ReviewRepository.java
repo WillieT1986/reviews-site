@@ -12,11 +12,15 @@ public class ReviewRepository {
 	Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewRepository() {
-		Review anime = new Review(1L, "Anime", "imageURL", "Anime Content", "Anime Category", "Anime Description");
-		Review game = new Review(2L, "Game", "imageURL", "Game Content", "Game Category", "Game Description");
+		Review anime = new Review(1L, "Anime", "image", "Anime Content", "Anime Category", "Anime Description");
+		Review game = new Review(2L, "Game", "image", "Game Content", "Game Category", "Game Description");
+		Review manga = new Review(3L, "Manga", "image", "Manga Content", "Manga Category", "Manga Description");
+		Review anime2 = new Review(4L, "Anime2", "image", "Anime2 Content", "Anime2 Category", "Anime2 Description");
 
 		reviews.put(anime.getCourseID(), anime);
 		reviews.put(game.getCourseID(), game);
+		reviews.put(manga.getCourseID(), manga);
+		reviews.put(anime2.getCourseID(), anime2);
 	}
 
 	public ReviewRepository(Review... reviews) {
