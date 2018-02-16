@@ -1,5 +1,10 @@
 package org.wecancodeit.columbus.reviewssite;
 
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.Test;
+
 public class ReviewRepositoryTest {
 
 	private ReviewRepository underTest;
@@ -11,5 +16,15 @@ public class ReviewRepositoryTest {
 	private long secondReviewID = 201L;
 	private Review secondReview = new Review(secondReviewID, "second title", "imageURL 2", "second category",
 			"content 2", "descritpion of second review");
+
+	@Test
+	public void shouldFindFirstReview() {
+		underTest = new ReviewRepository(firstReview);
+
+		Review result = underTest.findOne(firstReviewID);
+
+		assertThat(result, is(firstReview));
+
+	}
 
 }
