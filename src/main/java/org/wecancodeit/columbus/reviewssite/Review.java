@@ -15,7 +15,7 @@ public class Review {
 	}
 
 	public String getTitle() {
-		return null;
+		return title;
 	}
 
 }
