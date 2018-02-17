@@ -13,9 +13,10 @@ public class ReviewRepository {
 
 	public ReviewRepository() {
 		Review anime = new Review(1L, "Gosick", "image", "Anime Content", "Anime Category", "Anime Description");
-		Review game = new Review(2L, "Dragon Age", "image", "Game Content", "Game Category", "Game Description");
-		Review manga = new Review(3L, "Ubel Blight", "image", "Manga Content", "Manga Category", "Manga Description");
-		Review anime2 = new Review(4L, "Gate", "image", "Anime2 Content", "Anime2 Category", "Anime2 Description");
+		Review game = new Review(2L, "Dragon Age", "image", "Anime Content", "Anime Category", "Anime Description");
+		Review manga = new Review(3L, "Is It Wrong To Pick Up Girls in the Dungeon?", "image", "Anime Content",
+				"Anime Category", "Anime Description");
+		Review anime2 = new Review(4L, "Ubel Blight", "image", "Manga Content", "Manga Category", "Manga Description");
 
 		reviews.put(anime.getId(), anime);
 		reviews.put(game.getId(), game);
