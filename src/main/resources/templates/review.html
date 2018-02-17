@@ -16,7 +16,7 @@
 		<img th:src="${review.imageURL}"/>
 		<h2>Content</h2>
 			<ol>
-				<p th:list="${review.content}"/>
+				<li th:text="${review.content}"/>
 			</ol>
 		<h2>Category</h2>
 		<p th:text="${review.category}"/>
