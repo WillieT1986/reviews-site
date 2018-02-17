@@ -14,6 +14,7 @@
 	<article th:each="review: ${reviews}">
 		<ul>
 			<li><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+				<p th:text="${review.description}"/>
 		</ul>
 	</article>
 </body>

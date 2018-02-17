@@ -25,16 +25,12 @@
 	<article th:each="review: ${reviews}">
 		<img th:src="${review.imageURL}" />
 		<h2>Content</h2>
-			<ul>
-				<li th:text="${review.content}" />
-			</ul>
+			<p th:text="${review.content}" />
 		<h2>Category</h2>
 			<ul>
 				<li th:text="${review.category}" />
 			</ul>
-		<h2>Description</h2>
-		<p th:text="${review.description}"/>
-		<a href="http://localhost:8080/reviews">Back to home</a>
+	<a href="http://localhost:8080/reviews">Back to home</a>
 	</article>
 
 </body>
