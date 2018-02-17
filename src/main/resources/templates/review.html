@@ -10,9 +10,20 @@
 
 	<header th:each="review: ${reviews}">
 		<h1 th:text="${review.title}"></h1>
+
+<style>
+img {
+	display: block;
+	max-width: 750px;
+	max-height: 300px;
+	width: auto;
+	height: auto;
+}
+</style>
+
 	</header>
 
-	<div th:each="review: ${reviews}">
+	<article th:each="review: ${reviews}">
 		<img th:src="${review.imageURL}" />
 		<h2>Content</h2>
 			<ul>
@@ -25,7 +36,7 @@
 		<h2>Description</h2>
 		<p th:text="${review.description}"/>
 		<a href="http://localhost:8080/reviews">Back to home</a>
-	</div>
+	</article>
 
 </body>
 </html>

@@ -11,11 +11,10 @@
 		<h1>A List of Anime and Manga Reviews</h1>
 	</header>
 	
-	<div th:each="review: ${reviews}">
+	<article th:each="review: ${reviews}">
 		<ul>
 			<li><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
 		</ul>
-	</div>
-
+	</article>
 </body>
 </html>
