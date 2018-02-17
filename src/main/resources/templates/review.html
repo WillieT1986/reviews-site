@@ -9,12 +9,12 @@
 <body>
 
 	<header>
-		<h1> A Review </h1>
+		<h1 th:text="${review.title}"> An Anime Review </h1>
 	</header>
 
 	<div th:each="review: ${reviews}">
 		<h2 th:text="${review.title}"></h2>
-		<img th:src="${review.imageURL}"/>
+		<img th:src="${review.imageURLs}"/>
 		<h2 th:text="${review.content}"></h2>
 		<h2 th:text="${review.category}"></h2>
 		<h2 th:text="${review.description}"></h2>
