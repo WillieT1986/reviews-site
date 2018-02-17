@@ -21,7 +21,10 @@ public class ReviewRepository {
 
 		Review anime2 = new Review(2L, "D.Gray-man", "./images/dgrayman.jpeg",
 				"Licensed by Funimation, Episodes: 103, PG-13 - Teens 13 or older",
-				"Action, Adventure, Comedy, Super Power, Demons, Shounen", "Anime Description");
+				"Action, Adventure, Comedy, Super Power, Demons, Shounen",
+				"The Millennium Earl is back and wrecking havoc on Earth once again with his mechanical demons known as Akuma.,"
+						+ "Allen Walker, a young boy raised by General Cross of the Black Order along with his new friends from the Order fight against the Millennium Earl.,"
+						+ " Can Allen and his friends save the world?");
 
 		Review anime3 = new Review(3L, "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "./images/dungeon.jpg",
 				"Licensed by Sentai Filmworks, Episodes: 13, PG-13 - Teens 13 or older",
