@@ -6,23 +6,22 @@
 <title>A review</title>
 </head>
 
+	<style>
+		img {
+			display: block;
+			max-width: 685px;
+			max-height: 300px;
+			width: auto;
+			height: auto;
+		}
+	</style>
+	
 <body>
 
 	<header th:each="review: ${reviews}">
 		<h1 th:text="${review.title}"></h1>
-
-<style>
-img {
-	display: block;
-	max-width: 750px;
-	max-height: 300px;
-	width: auto;
-	height: auto;
-}
-</style>
-
 	</header>
-
+	
 	<article th:each="review: ${reviews}">
 		<img th:src="${review.imageURL}" />
 		<h2>Content</h2>
