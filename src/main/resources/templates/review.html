@@ -8,7 +8,7 @@
 
 <body>
 
-	<header>
+	<header th:each="review: ${reviews}">
 		<h1 th:text="${review.title}"> An Anime Review </h1>
 	</header>
 
