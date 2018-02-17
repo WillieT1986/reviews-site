@@ -13,7 +13,7 @@
 	
 	<div th:each="review: ${reviews}">
 		<ul>
-			<li th:href="@{/review(id=${review.id})}" th:text="${review.title}"></li>
+			<a><li th:href="@{/review(id=${review.id})}" th:text="${review.title}"></li></a>
 		</ul>
 	</div>
 
