@@ -15,7 +15,7 @@
 	<div th:each="review: ${reviews}">
 		<img th:src="${review.imageURL}"/>
 		<h2>Content</h2>
-		<p th:text="${review.content}"/>
+		<ol th:list="${review.content}"/>
 		<h2>Category</h2>
 		<p th:text="${review.category}"/>
 		<h2>Description</h2>
