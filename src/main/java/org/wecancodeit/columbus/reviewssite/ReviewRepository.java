@@ -21,7 +21,7 @@ public class ReviewRepository {
 
 		Review game = new Review(2L, "Dragon Age", "image", "Anime Content", "Anime Category", "Anime Description");
 
-		Review manga = new Review(3L, "Is It Wrong To Pick Up Girls in the Dungeon?", "image", "Anime Content",
+		Review manga = new Review(3L, "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "image", "Anime Content",
 				"Anime Category", "Anime Description");
 
 		Review anime2 = new Review(4L, "Ubel Blight", "image", "Manga Content", "Manga Category", "Manga Description");
