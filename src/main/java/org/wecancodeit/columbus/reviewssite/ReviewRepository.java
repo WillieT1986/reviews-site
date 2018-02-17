@@ -24,7 +24,11 @@ public class ReviewRepository {
 				"Action, Adventure, Comedy, Super Power, Demons, Shounen", "Anime Description");
 
 		Review anime3 = new Review(3L, "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "./images/dungeon.jpg",
-				"Anime Content", "Anime Category", "Anime Description");
+				"Licensed by Sentai Filmworks, Episodes: 13, PG-13 - Teens 13 or older",
+				"Action, Adventure, Comedy, Romance, Fantasy",
+				"This story is about a young boy named Bell who's under the protection of the Goddess Hestia.,"
+						+ "Bell explores the Dungeon which is underground, with a tower built on top of it which is managed by The Guild and other varios Gods & Goddesses.,"
+						+ " Bell hopes to one day catch up to a girl that he likes who's at the top of her class when it comes to being an Adventurer.");
 
 		Review manga = new Review(4L, "Übel Blatt", "./images/ubel.jpg", "Manga Content", "Manga Category",
 				"Manga Description");
