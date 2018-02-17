@@ -35,7 +35,10 @@ public class ReviewRepository {
 
 		Review manga = new Review(4L, "Übel Blatt", "./images/ubel.jpg",
 				"Serialized by Big Gangan, Authored by Shiono, Etorouji, Unknown Volumes & Chapters",
-				"Action, Adventure, Ecchi, Fantasy, Seinen", "Manga Description");
+				"Action, Adventure, Ecchi, Fantasy, Seinen",
+				"This story is about a boy named Kóinzell who's much older than he seems. Once know to be apart of a group of,"
+						+ " Hero's who ended up being betrayed. Kóinzell, seeks vengeance against the Hero's who betrayed him and his comrades and made them out to be traitors.,"
+						+ "Kóinzell is not just an object of fear but also of hope to those around him.");
 
 		reviews.put(anime.getId(), anime);
 		reviews.put(anime2.getId(), anime2);
