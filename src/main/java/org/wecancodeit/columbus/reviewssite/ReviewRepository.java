@@ -19,17 +19,17 @@ public class ReviewRepository {
 						+ " a detective while she remains at the top of the Library using her foresight to help solve crime while Kazuya,"
 						+ " is known to other students as Black Reaper. They must rely on one another as these two solve the Ghost Ship & The Alchemist.");
 
-		Review game = new Review(2L, "Dragon Age", "image", "Anime Content", "Anime Category", "Anime Description");
+		Review anime2 = new Review(2L, "Dragon Age", "image", "Anime Content", "Anime Category", "Anime Description");
 
-		Review manga = new Review(3L, "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "image", "Anime Content",
+		Review anime3 = new Review(3L, "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "image", "Anime Content",
 				"Anime Category", "Anime Description");
 
-		Review anime2 = new Review(4L, "Ubel Blight", "image", "Manga Content", "Manga Category", "Manga Description");
+		Review manga = new Review(4L, "Ubel Blight", "image", "Manga Content", "Manga Category", "Manga Description");
 
 		reviews.put(anime.getId(), anime);
-		reviews.put(game.getId(), game);
-		reviews.put(manga.getId(), manga);
 		reviews.put(anime2.getId(), anime2);
+		reviews.put(anime3.getId(), anime3);
+		reviews.put(manga.getId(), manga);
 	}
 
 	public ReviewRepository(Review... reviews) {
