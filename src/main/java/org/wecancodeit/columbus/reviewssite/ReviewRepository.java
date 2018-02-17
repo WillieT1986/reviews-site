@@ -12,8 +12,9 @@ public class ReviewRepository {
 	Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewRepository() {
-		Review anime = new Review(1L, "Gosick", "image", "Anime Content", "Mystery, Historical, Drama, Romance",
-				"Anime Description");
+		Review anime = new Review(1L, "Gosick", "image",
+				"Licensed by Funimation, Episodes: 24, Rated R - 17+ (violence & profanity)",
+				"Mystery, Historical, Drama, Romance", "Anime Description");
 		Review game = new Review(2L, "Dragon Age", "image", "Anime Content", "Anime Category", "Anime Description");
 		Review manga = new Review(3L, "Is It Wrong To Pick Up Girls in the Dungeon?", "image", "Anime Content",
 				"Anime Category", "Anime Description");
