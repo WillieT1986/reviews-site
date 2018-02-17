@@ -33,8 +33,9 @@ public class ReviewRepository {
 						+ "Bell explores the Dungeon which is underground, with a tower built on top of it which is managed by The Guild and other varios Gods & Goddesses.,"
 						+ " Bell hopes to one day catch up to a girl that he likes who's at the top of her class when it comes to being an Adventurer.");
 
-		Review manga = new Review(4L, "Übel Blatt", "./images/ubel.jpg", "Manga Content", "Manga Category",
-				"Manga Description");
+		Review manga = new Review(4L, "Übel Blatt", "./images/ubel.jpg",
+				"Serialized by Big Gangan, Authored by Shiono, Etorouji, Unknown Volumes & Chapters",
+				"Action, Adventure, Ecchi, Fantasy, Seinen", "Manga Description");
 
 		reviews.put(anime.getId(), anime);
 		reviews.put(anime2.getId(), anime2);
