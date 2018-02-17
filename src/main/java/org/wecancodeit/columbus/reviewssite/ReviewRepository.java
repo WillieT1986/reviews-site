@@ -24,7 +24,7 @@ public class ReviewRepository {
 		Review anime3 = new Review(3L, "Is It Wrong to Try to Pick Up Girls in a Dungeon?", "image", "Anime Content",
 				"Anime Category", "Anime Description");
 
-		Review manga = new Review(4L, "Ubel Blight", "image", "Manga Content", "Manga Category", "Manga Description");
+		Review manga = new Review(4L, "Übel Blatt", "image", "Manga Content", "Manga Category", "Manga Description");
 
 		reviews.put(anime.getId(), anime);
 		reviews.put(anime2.getId(), anime2);
