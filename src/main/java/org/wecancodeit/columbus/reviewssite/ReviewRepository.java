@@ -12,7 +12,7 @@ public class ReviewRepository {
 	Map<Long, Review> reviews = new HashMap<>();
 
 	public ReviewRepository() {
-		Review anime = new Review(1L, "Gosick", "image",
+		Review anime = new Review(1L, "Gosick", "./images/gosick.jpg",
 				"Licensed by Funimation, Episodes: 24, Rated R - 17+ (violence & profanity)",
 				"Mystery, Historical, Drama, Romance",
 				"A student by the name of Kujou, Kazuya attends a school where he comes across a young girl at the top of a towering Library where they end up talking about Mysteris and Legends. Solving crime scenes and assisting a detective while she remains at the top of the Library using her foresight to help solve crime while Kazuya is known to other students as Black Reaper. They must rely on one another as these two solve the Ghost Ship & The Alchemist.");
