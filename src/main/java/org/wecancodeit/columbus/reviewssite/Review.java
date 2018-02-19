@@ -41,5 +41,4 @@ public class Review {
 	public String getDescription() {
 		return description;
 	}
-
 }
